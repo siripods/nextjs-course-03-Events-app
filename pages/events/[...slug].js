@@ -9,7 +9,7 @@ import ErrorAlert from "../../components/events/error-alert";
 function FilteredEventsPage() {
     const router = useRouter();
     const filterData = router.query.slug;
-    console.log(filterData);
+    console.log(`filterData: ${filterData}`);
 
     if(!filterData) {
         return <p className='center'>Loading...</p>
